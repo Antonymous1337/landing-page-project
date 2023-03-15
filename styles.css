@@ -1,18 +1,18 @@
 * {
-    border: 1px solid red;
     padding: 0px;
     margin: 0px;
 }
 
 body > * {
-    padding: 0px 256px;
+    padding: 0px 20%;
 }
 
 body > *:not(header, footer) {
-    padding: 48px 256px;
+    padding: 48px 20%;
 }
 
 header {
+    padding-top: 8px;
     background-color: #1F2937;
     color: #F9FAF8;
     display: grid;
@@ -24,8 +24,24 @@ header * {
     display: inline;
 }
 
+.logo {
+    font-size: 24px;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: bolder;
+}
+
 header > p {
+    color: #E5E7EB;
+    font-size: 18px;
     text-align: center;
+}
+
+.block-container-one p {
+    color: #E5E7EB;
+    font-size: 24px;
 }
 
 a {
@@ -34,27 +50,44 @@ a {
 }
 
 .block-container-one {
+    background-color: #1F2937;
+    color: #F9FAF8;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
 }
 
 .block-container-two {
+    font-size: 26px;
+    font-weight: bolder;
+    color: #1F2937;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .images {
+    margin-top: 32px;
+    width: 100%;
     display: flex;
-    gap: 16px;
+    justify-content: space-between;
 }
 
 .images img {
-    width: 128px;
-    height: 128px;
-    border: 2px solid blue;
+    font-size: 16px;
+    font-weight: normal;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border: 5px solid #3882F6;
     border-radius: 16px;
+}
+
+#block-one-image-container {
+    width: 100%;
+    display: flex;
+    background-color: #666666;
+    justify-content: center;
+    align-items: center;
 }
 
 .images div {
@@ -62,33 +95,45 @@ a {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 128px;
+    min-width: 100px;
+    max-width: 200px;
+    width: 20%;
 }
 
 .block-container-three {
+    font-size: 42px;
     background-color: #E5E7EB;
 }
 
 .quote-author {
+    font-size: 30px;
     text-align: end;
 }
 
 .block-container-four {
     background-color: #3882F6;
-    color: white;
-    margin: 48px;
+    color: #E5E7EB;
+    margin: 48px 20%;
     padding: 32px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     border-radius: 8px;
 }
 
 button {
     background-color: #3882F6;
-    border: 2px solid #F9FAF8;
+    font-size: 16px;
+    margin: 16px 0px;
+    border: none;
     color: white;
-    padding: 8px 24px;
+    height: 36px;
+    width: 150px;
     border-radius: 8px;
+}
+
+.block-container-four button {
+    border: 2px solid #F9FAF8;
 }
 
 footer {
